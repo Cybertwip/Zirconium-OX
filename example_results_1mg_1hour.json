@@ -1,0 +1,67 @@
+{
+  "input": {
+    "mass_mg": 1.0,
+    "capture_efficiency": 0.75,
+    "elapsed_seconds": 3600.0,
+    "observation_years": 1.0,
+    "field_tesla": 5.0,
+    "trap_voltage": 10.0,
+    "trap_length_m": 0.01,
+    "prompt_proton_kinetic_MeV": 0.0,
+    "stopping_photon_fraction": 0.0
+  },
+  "nuclide": "zirconium-90 (isotopically pure)",
+  "hypothetical_reaction": "90Zr -> 16O + 32p + 42n",
+  "conservation": {
+    "initial_protons": 40,
+    "initial_neutrons": 50,
+    "final_initial_protons": 40,
+    "final_initial_neutrons": 50
+  },
+  "initial_nuclei": 6.698360501800564e+18,
+  "oxygen16_nuclei": 6.698360501800564e+18,
+  "q_breakup_MeV_per_nucleus": -656.2789728960568,
+  "minimum_breakup_MeV_per_nucleus": 656.2789728960568,
+  "minimum_breakup_energy_J": 704315750.8489215,
+  "minimum_breakup_energy_kWh": 195.64326412470044,
+  "assumed_prompt_proton_kinetic_energy_J": 0.0,
+  "assumed_photon_energy_from_proton_stopping_J": 0.0,
+  "assumed_nonphotonic_stopping_energy_J": 0.0,
+  "first_proton_separation_MeV": 8.353296534913277,
+  "prompt_free_protons": 2.1434753605761804e+20,
+  "initial_free_neutrons": 2.8133114107562367e+20,
+  "neutron_decay_fraction": 0.9834001339966191,
+  "free_neutrons_remaining": 4.670059244433619e+18,
+  "beta_decay_protons_produced": 2.7666108183119007e+20,
+  "beta_electrons_produced": 2.7666108183119007e+20,
+  "beta_antineutrinos_produced": 2.7666108183119007e+20,
+  "available_free_protons": 4.9100861788880804e+20,
+  "captured_protons_expected_idealized": 3.6825646341660606e+20,
+  "untrapped_protons_expected_idealized": 1.2275215447220201e+20,
+  "beta_Q_MeV_per_neutron": 0.7823467318986645,
+  "beta_decay_total_energy_J": 34678295.045638524,
+  "net_mass_energy_input_J_after_beta": 669637455.8032831,
+  "proton_decay_mode": "p -> e+ + pi0 (not seen; NOT neutron beta decay)",
+  "upper_expected_proton_mode_events_in_observation_time": 1.1163934169667607e-14,
+  "qcd_linear_potential_GeV_at_1fm": 0.9628688363590853,
+  "su3_example": {
+    "f123": 1.0,
+    "f213": -1.0,
+    "gluon_Fxy3_nonlinear_only_gs1_Ax1_Ay2_1": 1.0
+  },
+  "trap": {
+    "stable_linear_penning_model": true,
+    "cyclotron_Hz": 76225932.29104848,
+    "axial_Hz": 492579.6162227683,
+    "modified_cyclotron_Hz": 76224340.70838563,
+    "magnetron_Hz": 1591.5826628533644
+  },
+  "notes": [
+    "Breakup is counterfactual; mass balance is not an achievable reaction rate.",
+    "Minimum breakup energy excludes inefficiencies, kinetic barriers and device costs.",
+    "Neutron beta decay makes protons, electrons and antineutrinos; protons do not become light.",
+    "Optional photons from slowing prompt protons consume assumed kinetic energy only, not proton rest mass.",
+    "Capture efficiency is an assumption; a Penning trap cannot trap high-energy protons without prior cooling/acceptance.",
+    "Super-K bound is a 90%-CL partial lifetime lower limit for one proton decay channel, not a measured decay rate."
+  ]
+}
